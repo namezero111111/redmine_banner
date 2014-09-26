@@ -3,7 +3,7 @@ class CreateBanners < ActiveRecord::Migration
     create_table :banners do |t|
       t.column :enabled, :boolean
       t.column :type, :string
-      t.column :banner_description, :string
+      t.column :banner_description, :text
       t.column :use_timer, :boolean
       t.column :start_date, :datetime
       t.column :end_date, :datetime
